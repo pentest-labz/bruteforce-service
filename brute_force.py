@@ -4,7 +4,6 @@ import concurrent.futures
 
 app = Flask(__name__)
 
-# 🛠️ Default password list
 DEFAULT_PASSWORDS = [
     "admin123", "password", "123456", "qwerty", "letmein",
     "welcome", "login", "root", "123123", "passw0rd"

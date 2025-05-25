@@ -12,13 +12,12 @@ app = Flask(__name__)
 CORS(
     app,
     resources={r"/*": {"origins": [
-        "http://localhost:4000",
+        "http://orchestrator-ui:4000",
+        "http://bruteforce-service:5002",
         "http://localhost:8000",
-        "http://localhost:8001",
-        "http://localhost:8002",
+        "http://scanner-service:8001",
+        "http://auth-service:8002",
         "http://localhost:8003",
-        "http://localhost:5002",
-        "http://localhost:5003",
     ]}},
     supports_credentials=True
 )

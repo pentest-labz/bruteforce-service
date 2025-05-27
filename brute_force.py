@@ -11,14 +11,7 @@ LOG_FILE = os.path.join(BASE_DIR, "curl.txt")
 app = Flask(__name__)
 CORS(
     app,
-    resources={r"/*": {"origins": [
-    "http://localhost:4000",
-    "http://localhost:5002",
-    "http://localhost:8000",
-    "http://localhost:8001",
-    "http://localhost:8002",
-    "http://localhost:5003",
-] }},
+    resources={r"/*": {"origins": "*"}},
     supports_credentials=True
 )
 
